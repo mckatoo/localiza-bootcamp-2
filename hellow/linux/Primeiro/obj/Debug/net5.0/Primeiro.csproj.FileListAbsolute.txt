@@ -1,0 +1,16 @@
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/bin/Debug/net5.0/Primeiro
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/bin/Debug/net5.0/Primeiro.deps.json
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/bin/Debug/net5.0/Primeiro.runtimeconfig.json
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/bin/Debug/net5.0/Primeiro.runtimeconfig.dev.json
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/bin/Debug/net5.0/Primeiro.dll
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/bin/Debug/net5.0/ref/Primeiro.dll
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/bin/Debug/net5.0/Primeiro.pdb
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.csproj.AssemblyReference.cache
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.GeneratedMSBuildEditorConfig.editorconfig
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.AssemblyInfoInputs.cache
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.AssemblyInfo.cs
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.csproj.CoreCompileInputs.cache
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.dll
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/ref/Primeiro.dll
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.pdb
+/home/mckatoo/projects/bootcamps/localiza-bootcamp-2/hellow/Primeiro/obj/Debug/net5.0/Primeiro.genruntimeconfig.cache
