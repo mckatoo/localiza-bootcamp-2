@@ -1,12 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Dio.Series
 {
     public class Serie : EntidadeBase
     {
+        public Serie(Genero genero, string descricao, string titulo, int ano)
+        {
+            Genero = genero;
+            Descricao = descricao;
+            Titulo = titulo;
+            Ano = ano;
+        }
         public Serie(Guid id, Genero genero, string descricao, string titulo, int ano)
         {
             ID = id;
@@ -33,9 +35,11 @@ namespace Dio.Series
         {
             return Titulo;
         }
-        public Guid RetornaID()
+
+        public Genero retornaGenero()
         {
-            return ID;
+            return Genero;
         }
+
     }
 }

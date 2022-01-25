@@ -2,12 +2,33 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": ".NET Core Test with debugger",
+      "type": "process",
+      "isBackground": true,
+      "command": "dotnet",
+      "args": ["watch", "test"],
+      "options": {
+        "cwd": "${workspaceFolder}/Dio.Series.Test",
+        "env": {
+          "VSTEST_HOST_DEBUG": "1"
+        }
+      },
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "build",
       "command": "dotnet",
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/Dio.Series/Dio.Series.csproj",
+        "${workspaceFolder}/Dio.Series.Tests/Dio.Series.Tests.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +40,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/Dio.Series/Dio.Series.csproj",
+        "${workspaceFolder}/Dio.Series.Tests/Dio.Series.Tests.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -33,7 +54,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/Dio.Series/Dio.Series.csproj"
+        "${workspaceFolder}/Dio.Series.Tests/Dio.Series.Tests.csproj"
       ],
       "problemMatcher": "$msCompile"
     }

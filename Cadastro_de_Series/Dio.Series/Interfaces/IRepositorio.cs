@@ -11,7 +11,6 @@ namespace Dio.Series.Interfaces
         T PorID(Guid id);
         void Adicionar(T entidade);
         void Atualizar(T entidade);
-        void Remover(T entidade);
-        Guid ProximoID();
+        void Remover(Guid id);
     }
 }
