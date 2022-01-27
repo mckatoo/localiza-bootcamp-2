@@ -10,7 +10,7 @@ public class SerieTest
     static SerieRepositorio repositorio = new SerieRepositorio();
 
     [TestMethod]
-    public void CreateSerie()
+    public void CriarSerie()
     {
         Serie novaSerie = new Serie(
             genero: Genero.Comedia,

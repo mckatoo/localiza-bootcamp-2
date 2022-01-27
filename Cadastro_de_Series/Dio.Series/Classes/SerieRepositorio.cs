@@ -66,7 +66,7 @@ namespace Dio.Series
             var serie = listaSeries.Where(x => x.ID == id).FirstOrDefault();
             if (serie == null)
                 throw new Exception("Não foi possível encontrar a serie com o ID informado.");
-            listaSeries.Remove(serie);
+            serie.remove();
         }
     }
 }

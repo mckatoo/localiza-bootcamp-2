@@ -41,5 +41,10 @@ namespace Dio.Series
             return Genero;
         }
 
+        public void remove()
+        {
+            Excluido_em = DateTime.Now;
+        }
+
     }
 }

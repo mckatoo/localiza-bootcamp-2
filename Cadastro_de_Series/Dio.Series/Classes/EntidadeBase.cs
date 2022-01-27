@@ -6,6 +6,6 @@ namespace Dio.Series
 
         public DateTime Criado_em { get; protected set; } = DateTime.Now;
         public DateTime Atualizado_em { get; protected set; } = DateTime.Now;
-        public DateTime Excluido_em { get; protected set; }
+        public DateTime Excluido_em { get; protected set; } = DateTime.UnixEpoch;
     }
 }

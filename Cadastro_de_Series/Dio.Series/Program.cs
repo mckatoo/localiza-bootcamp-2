@@ -90,17 +90,17 @@
             Console.Write("Digite a Descrição da Série: ");
             string? entradaDescricao = Console.ReadLine();
 
-            Serie atualizaSerie;
-            if (indiceSerie != null && entradaTitulo != null && entradaDescricao != null)
+            if (entradaTitulo != null && entradaDescricao != null)
             {
-                atualizaSerie = new Serie(
+                Serie serieAtualizada = new Serie(
+                    id,
                     genero: (Genero)entradaGenero,
                     titulo: entradaTitulo,
                     ano: entradaAno,
                     descricao: entradaDescricao
                 );
 
-                repositorio.Atualizar(atualizaSerie);
+                repositorio.Atualizar(serieAtualizada);
             }
         }
 
@@ -118,18 +118,16 @@
 
             foreach (var serie in lista)
             {
-                string excluido = serie.Excluido_em == null ? "*Excluido*" : "";
+                string excluido = serie.Excluido_em != DateTime.UnixEpoch ? "*Excluido*" : "";
 
-                Console.WriteLine($"#ID {serie.ID}: - {serie.retornaTitulo} {excluido}");
+                Console.WriteLine($"#ID {serie.ID}: - {serie.retornaTitulo()} {excluido}");
             }
         }
 
         private static void InserirSerie()
         {
-            Console.WriteLine("Inserir nova série");
+            Console.WriteLine("Insera nova série");
 
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
             foreach (int i in Enum.GetValues(typeof(Genero)))
             {
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
